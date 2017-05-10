@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add New Item</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style/addFoodStyle.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food Smart</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Tracking</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Report<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Monthly</a></li>
+                            <li><a href="#">History</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Others</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+<div class="container">
+<br>
+    <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <form>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Add new food item</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><label for="foodName">Food Name:</label></td>
+                    <td><input type="text" class="form-control" name="foodName" id="foodName" placeholder="Please enter food name" onblur="valiName()"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="amount">Amount :</label></td>
+                    <td><input type="text" class="form-control" name="amount" id="amount" placeholder="Please enter amount of food with units"></td>
+                </tr>
+                <tr>
+                    <td><label for="price">Price:</label></td>
+                    <td><input type="number" class="form-control" name="price" id="price" placeholder="Please enter the price"></td>
+                </tr>
+                <tr>
+                    <td><label for="expireDate">Expire Date:</label></td>
+                    <td><input type="date" class="form-control" name="expireDate" id="expireDate"></td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+
+    <button type="submit" class="btn btn-warning btn-block">Submit</button>
+    <button type="reset" class="btn btn-warning btn-block">Reset</button><br>
+</div>
+    <div class="col-sm-3" ></div>
+    </div>
+</div>
+
+
+<!--JS validation-->
+<script>
+    function valiName() {
+        if ($("foodName").value.length >= 20) {
+            $("foodName").className = "err";
+            $("nameWrong").innerHTML = "The name length limits at 20 characters";
+        }
+    }
+    function valiPrice() {
+        if (isNaN($("price"))) {
+            $("price").className = "err";
+            $("priceWrong").innerHTML = "Please enter a number";
+        }
+    }
+    function valiAmt() {
+        if($(""))
+
+    }
+
+
+</script>
+
+
+</body>
+</html>
