@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		form 			{text-align: center;}
+		
+		.header 		{border-style: solid;
+						 text-align: center;
+						 background-color: #77bb99;}
+	</style>
+</head>
+
+<body>
+
+
+
+<div class="container-fluid" style="padding: 0;">
+
+
+
+<!--Navbar-->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+						<a class="navbar-brand" href="#">Food Smart</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Tracking</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Report<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Monthly</a></li>
+									<li><a href="#">History</a></li>
+								</ul>
+						</li>
+						<li class="active"><a href="#">Others</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		
+
+		<br>
+
+
+
+<!--Support-->		
+		<div class="text-center" style="margin-top: 5%;">
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" style="background-color:#eebb22; color: #444444; width: 100px;">Support</button>
+		</div>
+				
+				<div id="demo" class="collapse col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3"><br>
+					
+					<div class="text-center">
+						<h2>Food Tracking User Guide</h2>
+					</div>
+		
+					<br>
+		
+					<table class="table" border="0">
+			
+						<thead>
+						
+							<tr>
+							</tr>
+							
+						</thead>
+    
+						<tbody>
+			
+							<tr>
+								<td style="width: 50%"><img src="pics/plus_1.png"  alt="plus" width="26.4"/></td>
+								<td>Add new food item to tracking list.</td>
+							</tr>
+	  
+							<tr>
+								<td><img src="pics/close.png"  alt="close" width="26.4"/></td>
+								<td>Delete food item from tracking list and the item does not be classified into “waste”. </td>
+							</tr>
+	  
+							<tr>
+								<td><img src="pics/trash.png"  alt="trash" width="26.4"/></td>
+								<td>Delete food item from tracking list and the item does not be classified into “waste”. </td>
+							</tr>
+	  
+							<tr>
+								<td><img src="pics/minus.png"  alt="minus" width="26.4"/></td>
+								<td>Decrease amount of food item.</td>
+							</tr>
+	  
+							<tr>
+								<td><img src="pics/minus.png"  alt="minus" width="26.4"/></td>
+								<td>Color indicator can display the expiration date date  of food items. Red color means close to expiration date.Yellow color means food items are in the middle of expiration date. Green color means the food items are fresh.</td>
+							</tr>
+	
+							<tr> 
+								<td></td>
+								<td></td>
+							</tr>
+				
+						</tbody>
+					</table>
+		
+					<div class="text-center">
+						<p>If you still have questions, you can take a phone call to us(XXX-XXX-XXXX).</p>
+					</div>
+	
+				</div>
+			
+				
+		
+<!--About Us-->
+		<div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
+			<div class="text-center" style="margin-top: 20%;">
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1" style="background-color:#eebb22; color: #444444; width: 100px;">About Us</button>
+			</div>
+				<div id="demo1" class="collapse">
+				
+					<br>
+					
+					<p>Our development team is a small group. We spent five weeks in order to develop this web app. To be honest, we put a lot of effort on this project. We wish that our app can really help you and thank for your support.</p>
+				
+				</div>
+		</div>
+
+			
+					
+<!--Affiated App-->
+		<div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
+			<div class="text-center" style="margin-top: 20%;">
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2" style="background-color:#eebb22; color: #444444; width: 100px;">Affiated App</button>
+			</div>
+				<div id="demo2" class="collapse">
+					<br>
+						<div class="text-center">
+							<p>Freshness provides the food preservation methods for you to keep the food fresh as long as you can.</p>
+								
+							<br>
+
+							<img src="pics/freshness.png" class="img-thumbnail" alt="freshness" />
+						</div>
+				</div>
+		</div>
+
+
+					
+<!--Log Out-->					
+		<div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">				
+			<div class="text-center" style="margin-top: 20%;">
+				<button type="button" class="btn" style="background-color:#eebb22; color: #444444; width: 100px;" onclick="logout()">Log Out</button>
+			</div>
+			<script>
+				function logout(){
+				window.location.assign("http://www.w3school.com.cn/tags/tag_table.asp")}
+			</script>
+		</div>	
+		
+		
+		
+</div>
+</body>
+</html>
